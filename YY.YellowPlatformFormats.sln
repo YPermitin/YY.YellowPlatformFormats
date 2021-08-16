@@ -9,13 +9,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YY.YellowPlatformFormats.Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADC4E683-A723-472D-BDFB-910C6B4B6A5B}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\dotnet-test-on-linux.yml = .github\workflows\dotnet-test-on-linux.yml
+		.github\workflows\dotnet-test-on-windows.yml = .github\workflows\dotnet-test-on-windows.yml
+		.github\workflows\dotnet.yml = .github\workflows\dotnet.yml
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2603B6C4-7999-4196-B190-5BB41A8731D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YY.YellowPlatformFormats.Core.Tests", "Tests\YY.YellowPlatformFormats.Core.Tests\YY.YellowPlatformFormats.Core.Tests.csproj", "{76E01B08-225F-4709-9462-ABC4FB0741FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YY.YellowPlatformFormats.Core.Tests", "Tests\YY.YellowPlatformFormats.Core.Tests\YY.YellowPlatformFormats.Core.Tests.csproj", "{76E01B08-225F-4709-9462-ABC4FB0741FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{F36025A1-B21B-4975-84FD-EABE9BFB567F}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\icon.png = Nuget\icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{495E180B-E92A-40CE-93D3-FB7509485367}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\deploy.sh = Scripts\deploy.sh
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D930B1C2-2F3C-4958-8E69-08EAA83ED541} = {EEE0C3CD-1C95-4241-A4F6-15C7C09F7784}
 		{76E01B08-225F-4709-9462-ABC4FB0741FC} = {2603B6C4-7999-4196-B190-5BB41A8731D4}
+		{F36025A1-B21B-4975-84FD-EABE9BFB567F} = {ADC4E683-A723-472D-BDFB-910C6B4B6A5B}
+		{495E180B-E92A-40CE-93D3-FB7509485367} = {ADC4E683-A723-472D-BDFB-910C6B4B6A5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFF1AFFB-990F-44EE-92D6-3B8EF8FC0972}

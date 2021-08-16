@@ -110,6 +110,11 @@ string internalString = ObjectToInternalStringConverter.ValueToStringInternal(va
 
 На этом и весь пример.
 
+## Связанные материалы
+
+* Используется библиотека [OneSTools.BracketsFile](https://github.com/akpaevj/OneSTools.BracketsFile) для разбора "скобочного" формата.
+* Хорошее описание внутреннего формата 1С в публикации [Описание формата внутреннего представления данных 1С в контексте обмена данными](https://infostart.ru/1c/articles/1116103/#Структура).
+
 ## TODO
 
 * Рефакторинг модулей

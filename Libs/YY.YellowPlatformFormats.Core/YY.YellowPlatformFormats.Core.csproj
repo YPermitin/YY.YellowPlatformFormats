@@ -9,12 +9,25 @@
 Библиотека для работы с типами данных платформы 1С:Предприятние 8.x.</Description>
     <Copyright>Permitin Yuriy</Copyright>
     <PackageProjectUrl>https://github.com/YPermitin/YY.YellowPlatformFormats</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/YPermitin/YY.YellowPlatformFormats</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>1C, 1C:Enterprise, types, converter, integration</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="OneSTools.BracketsFile" Version="2.1.9" />
     <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Nuget\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
