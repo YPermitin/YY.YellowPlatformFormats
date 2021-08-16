@@ -1,4 +1,4 @@
-# YY.YellowPlatformFormats
+# YY.YellowPlatformFormats [![NuGet version](https://badge.fury.io/nu/YY.YellowPlatformFormats.svg)](https://badge.fury.io/nu/YY.YellowPlatformFormats)
 
 Библиотека для работы с типами данных платформы 1С:Предприятние 8.x из .NET.
 
