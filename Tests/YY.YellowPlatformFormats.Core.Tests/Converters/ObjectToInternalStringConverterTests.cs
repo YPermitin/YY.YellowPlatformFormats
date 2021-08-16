@@ -144,7 +144,7 @@ namespace YY.YellowPlatformFormats.Core.Tests.Converters
         public void ComplexObjectToInternalString_v1_Test()
         {
             Structure value = new Structure();
-            value.Insert("Тест1", 1);
+            value.Insert("Тест1", 1M);
             value.Insert("Тест2", "Какая-то строка");
             Structure value2 = new Structure();
             value2.Insert("Знач1", NullValue.Default);
@@ -153,7 +153,7 @@ namespace YY.YellowPlatformFormats.Core.Tests.Converters
 
             string internalString = ObjectToInternalStringConverter.ValueToStringInternal(value);
             Assert.Equal(
-                @"{""#"",4238019d-7e49-4fc9-91db-b6b951d5cf8e,{3,{{""S"",""Тест1""},{""L""}},{{""S"",""Тест2""},{""S"",""Какая-то строка""}},{{""S"",""Объект""},{""#"",4238019d-7e49-4fc9-91db-b6b951d5cf8e,{2,{{""S"",""Знач1""},{""L""}},{{""S"",""Знач2""},{""U""}}}}}}}",
+                @"{""#"",4238019d-7e49-4fc9-91db-b6b951d5cf8e,{3,{{""S"",""Тест1""},{""N"",1.00}},{{""S"",""Тест2""},{""S"",""Какая-то строка""}},{{""S"",""Объект""},{""#"",4238019d-7e49-4fc9-91db-b6b951d5cf8e,{2,{{""S"",""Знач1""},{""L""}},{{""S"",""Знач2""},{""U""}}}}}}}",
                 internalString);
         }
     }

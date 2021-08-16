@@ -70,7 +70,7 @@ public void DoSomething(byte[] valueFrom1C)
 {"#",4238019d-7e49-4fc9-91db-b6b951d5cf8e,{3,
         {
             {"S","Тест1"},
-            {"L"}
+            {"N",1.00}
         },
         {
             {"S","Тест2"},
@@ -97,7 +97,7 @@ public void DoSomething(byte[] valueFrom1C)
 Аналогично этот же объем можно полностью создать программно:
 ```csharp
 Structure value = new Structure();
-value.Insert("Тест1", 1);
+value.Insert("Тест1", 1M);
 value.Insert("Тест2", "Какая-то строка");
 Structure value2 = new Structure();
 value2.Insert("Знач1", NullValue.Default);
