@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Version>1.0.0.1</Version>
+    <Version>1.0.0.2</Version>
     <Authors>Permitin Yuriy</Authors>
     <Description>Library for working with data types of the 1C: Enterprise 8.x platform.
 

@@ -96,7 +96,7 @@ namespace YY.YellowPlatformFormats.Core.Converters
             }
             else if (destinationType == typeof(decimal))
             {
-                newValue = decimal.Parse(sourceValue.ToString().Replace('.', ','));
+                newValue = decimal.Parse(sourceValue.ToString(), CultureInfo.InvariantCulture);
             }
             else if (destinationType == typeof(bool))
             {
